@@ -1,0 +1,90 @@
+.footer {
+  overflow: hidden;
+  display: flex;
+  background: url("/resources/images/bg.jpg") 0 0/cover no-repeat;
+  padding: 45px 160px;
+  text-transform: uppercase;
+}
+.footer__right-side {
+  display: block;
+  margin-left: auto;
+}
+
+.left-side__company-name {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.left-side__links {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.links__link {
+  margin-right: 55px;
+}
+.links__link :last-child {
+  margin-right: 0px;
+}
+
+.right-side__button {
+  display: flex;
+  border: #fff solid 3px;
+  padding: 13px 16px 11px 12px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.button__img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+.button__text {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media (max-width: 750px) {
+  .footer {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 90px 0 0 0;
+  }
+  .footer__left-side {
+    margin: 45px auto 35px auto;
+  }
+  .footer__right-side {
+    margin: 0 auto;
+  }
+  .right-side__button {
+    display: flex;
+    border: #fff solid 3px;
+    padding: 20px 75px 20px 65px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .left-side__company-name {
+    font-size: 22px;
+  }
+  .left-side__links {
+    font-size: 16px;
+  }
+  .button__img {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+  .button__text {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .links__link {
+    margin-right: 30px;
+  }
+  .links__link :last-child {
+    margin-right: 0px;
+  }
+}

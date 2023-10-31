@@ -1,0 +1,26 @@
+@import "nullstyle.css";
+@import "head.css";
+@import "body.css";
+@import "footer.css";
+@import "slick-slider-partners.css";
+
+@font-face {
+    font-family: "Futura PT";
+    src: local("Futura PT"),
+            url("../../resources/fonts/futurabookc-webfont.woff2") format("woff2"),
+            url("../../resources/fonts/futurabookc-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "FuturaDemiC";
+    src: local("FuturaDemiC"),
+            url("../../resources/fonts/futurademic-webfont.woff2") format("woff2"),
+            url("../../resources/fonts/futurabookc-webfont.woff") format("woff");
+}
+
+body{
+    font-family: "Futura PT", sans-serif; 
+    font-size: 14px;
+    
+    
+}

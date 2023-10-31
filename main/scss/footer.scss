@@ -1,0 +1,106 @@
+.footer{
+    overflow: hidden;
+    display: flex;
+    background: url("/resources/images/bg.jpg")  0 0/cover no-repeat;
+    padding: 45px 160px;
+    text-transform: uppercase;
+    
+    &__right-side{
+        display: block;
+        margin-left: auto;
+    }
+}
+.left-side{
+    &__company-name{
+        color: #fff;
+        margin-bottom: 15px;
+    }
+    &__links{
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 12px;
+        text-decoration: underline;
+        
+    }
+}
+.links{
+    &__link{
+        margin-right: 55px;
+        :last-child{
+            margin-right: 0px;
+        }
+    }
+}
+.right-side{
+    &__button{
+        display: flex;
+        border: #fff solid 3px;
+        padding: 13px 16px 11px 12px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+.button{
+    &__img{
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+    }
+    &__text{
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+@media (max-width: 750px) {
+    .footer{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 90px 0 0 0;
+        &__left-side{
+            margin: 45px auto 35px auto ;
+        }
+        &__right-side{
+            margin: 0 auto;
+        }
+    }
+
+    .right-side{    
+        &__button{
+
+            display: flex;
+            border: #fff solid 3px;
+            padding: 20px 75px 20px 65px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0);
+        }
+    }
+    .left-side{
+        &__company-name{
+            font-size: 22px;
+        }
+        &__links{
+            font-size: 16px;
+        }
+    }
+    .button{
+        &__img{
+            width: 30px;
+            height: 30px;
+            margin-right: 20px;
+        }
+        &__text{
+            font-size: 28px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+    }
+    .links{
+        &__link{
+            margin-right: 30px;
+            :last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+}
